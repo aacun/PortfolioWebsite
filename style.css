@@ -21,23 +21,29 @@ a, .btn {
     transition: all 300ms ease
 }
 
-/* DESKTOP NAV ----------------------------------------------------*/
+
+/* DESKTOP NAV ----------------------------------------------------------*/
 nav, .nav-links {
     display: flex;
 }
 
+
 nav {
-    border-bottom: 2px solid black;
+    background: white;
+    position: sticky;
+    top: 0;
+    border-bottom: 3px solid black;
     justify-content: space-around;
     align-items: center;
     height: 13vh;
+    z-index: 1;
 }
 
 .nav-links {
-    
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 a {
@@ -47,10 +53,10 @@ a {
 }
 
 a:hover {
-    color: gray;
+    color: rgb(121, 192, 215);
     text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181,181,181);
+    text-underline-offset: 0.6rem;
+    text-decoration-color: rgb(121, 192, 215);
 }
 
 .logo {
@@ -63,7 +69,7 @@ a:hover {
     cursor: default;
 }
 
-/* HAMBURGER MENU ---------------------------------------------------*/
+/* HAMBURGER MENU -------------------------------------------------------*/
 
 #hamburger-nav {
     display: none;
@@ -103,7 +109,11 @@ a:hover {
     transition: max-height 0.3 ease-in-out;
   }
 
-  .menu-links a {
+.menu-links a:hover {
+    background-color: rgb(121, 192, 215);
+}
+
+.menu-links a {
     display: block;
     padding: 10px;
     text-align: center;
@@ -113,11 +123,13 @@ a:hover {
     transition: all 0.3 ease-in-out;
   }
 
+
 .menu-links li {
     list-style: none;
 }
 
 .menu-links.open {
+    border: 3px solid black;
     max-height: 300px;
 }
 
@@ -145,9 +157,12 @@ a:hover {
   transform: none;
 }
 
-/* HERO SECTION------------------------------------------ */
+/* HERO SECTION------------------------------------------------------------- */
 
 .hero {
+    background-image: url(giphy.webp);
+    background-size: cover;
+    background-position: center;
     padding-top: 16vh;
     display: flex;
     flex-direction: column;
@@ -161,36 +176,87 @@ a:hover {
     font-weight: 700;
 }
 
+
 .hero-description {
     padding-top: 1vh;
     font-size: 2rem;
     font-weight: 300;
 }
 
-.projects {
-    margin: 10vh 7vh;
+/* PROJECTS---------------------------------------------------------------- */
+
+#project-container {
+    margin-top: 20vh;
+    width: 100%;
+    height: 95%;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 500px;
-    border: 3px solid black;
+    flex-wrap: wrap;
+    gap: 2vw;
 }
 
-.project1 {
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-    text-align: center;
-
+.project { /* position: relative therefore whatever is position absolute below adjusts to it*/
+    width: 25vw;
+    height: 25vw;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
 }
 
-.project2 {
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
+.project a {
+    display: block;
+    position: relative;
+}
+.project-image { 
+    width: 25vw;
+    height: 25vw;
+    object-fit: cover;
+}
+
+.project-description {
+    color: white;
+    width: 25vw;
+    height: 25vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+p { 
+    color: white;
+}
+
+.project-description:hover {
+    opacity: 1;
 }
 
 
+/* CONTACT -------------------------------------------------------------- */
+.contact {
+    border-top: 3px solid black;
+    margin-top: 10vh;
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contact h2 {
+    width: 25vw;
+    padding: 20px;
+}
+
+.contact h3 {
+    width: 25vw;
+    padding: 20px;
+}
