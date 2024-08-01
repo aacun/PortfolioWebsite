@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Acunin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- DESKTOP NAV BAR -------------------------------->
+    <nav id="desktop-nav">
+        <div class="logo">Adam Acunin</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#design">Design</a></li>
+                <li><a href="#illustration">Illustration</a></li>
+                <li><a href="#photography">Photography</a></li>
+                <li><a href="#about">About</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HAMBURGER NAV BAR ------------------------------>
+    <nav id="hamburger-nav">
+        <div class="logo">Adam Acunin</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#design" onclick="toggleMenu()">Design</a></li>
+                <li><a href="illustration" onclick="toggleMenu()">Illustration</a></li>
+                <li><a href="#photography" onclick="toggleMenu()">Photography</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-header">
+            <h1>Hey, I'm Adam!</h1>
+        </div>
+        <div class="hero-description">
+            <h2>I'm a visual designer studying Computer Science and Visual Communication Design at the University of Notre Dame</h2>
+        </div>
+    </section>
+
+    <section class="projects">
+        <ul>
+            <li class="project1">Project 1</li>
+            <li class="project2">Project 2</li>
+        </ul>
+    </section>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

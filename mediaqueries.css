@@ -1,0 +1,51 @@
+:root {
+    --hero-header: clamp(3rem, 3vw, 5.5rem);
+    --hero-description: clamp(1rem, 1.5rem, 3rem);
+    
+}
+
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display:none;
+    }
+    #hamburger-nav {
+        display: flex; 
+    }
+
+    .hero {
+        margin: 0 16vw;
+    }
+    .hero h1 {
+        font-size: 4.25rem;
+    }
+    .hero h2 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        margin: 0 10vw;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero h2 {
+        font-size: 2.25rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        margin: 0 4vw;
+    }
+    .hero h1 {
+        font-size: 2.75rem;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+}
