@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Acunin</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../mediaqueries.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- DESKTOP NAV BAR -------------------------------->
+    <nav id="desktop-nav">
+        <div class="logo">Adam Acunin</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Design</a></li>
+                <li><a href="/photography/photography.html">Photography</a></li>
+                <li><a href="../about.html">About</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HAMBURGER NAV BAR ------------------------------>
+    <nav id="hamburger-nav">
+        <div class="logo">Adam Acunin</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="../index.html" onclick="toggleMenu()">Design</a></li>
+                <li><a href="/photography/photography.html" onclick="toggleMenu()">Photography</a></li>
+                <li><a href="../about.html" onclick="toggleMenu()">About</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="project1">
+        <h1 class="project1header">Book Cover Design - Andy Warhol Biography</h1>
+
+        <div class="project1description">
+            <h3>
+                Andy Warhol, the iconic figure who revolutionized 20th-century art, 
+                is the focus of this visually striking biography. The speculative cover design, 
+                inspired by Warhol's bold use of color and his fascination with pop 
+                culture, reflects his unique style.The design seamlessly integrates
+                the front cover, spine, and back cover, capturing the essence of Warhol’s 
+                influence in a fresh and engaging way.
+            </h3>
+            <br>  
+            <div>
+                <h3>Audience: Artists, Designers, Creatives</h3> 
+                <h3>Central Themes: Pop Art Movement, Book Mockups</h3>  
+                <h3>Goal: Engage viewers in a bookstore setting</h3>
+            </div>  
+        </div>
+
+         
+        
+        <div class="images">
+            <img class="project1images" src="/project2/andywarholbookcover1.jpg">
+            <img class="project1images" src="/project2/andywarholbookcover2.jpg">
+            <img class="project1images" src="/project2/andywarholbookcover3.jpg">
+        </div>
+    </div>
+
+
+    <script src="../script.js"></script>
+</body>
+</html>

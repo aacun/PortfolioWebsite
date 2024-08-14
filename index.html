@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam Acunin</title>
+    <link rel="icon" href="assets/favicon.ico" type="x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 
@@ -24,8 +25,7 @@
         <div>
             <ul class="nav-links">
                 <li><a href="index.html">Design</a></li>
-                <li><a href="illustration.html">Illustration</a></li>
-                <li><a href="photography.html">Photography</a></li>
+                <li><a href="/photography/photography.html">Photography</a></li>
                 <li><a href="about.html">About</a></li>
 
             </ul>
@@ -43,47 +43,45 @@
             </div>
             <div class="menu-links">
                 <li><a href="index.html" onclick="toggleMenu()">Design</a></li>
-                <li><a href="illustration.html" onclick="toggleMenu()">Illustration</a></li>
-                <li><a href="photography.html" onclick="toggleMenu()">Photography</a></li>
+                <li><a href="/photography/photography.html" onclick="toggleMenu()">Photography</a></li>
                 <li><a href="about.html" onclick="toggleMenu()">About</a></li>
             </div>
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-header">
-            <h1>Hey, I'm Adam!</h1>
-        </div>
+    <div class="hero">
+        <h1 class="hero-header">ʕ·ᴥ·ʔ Hey, I'm Adam! </h1>
         <div class="hero-description">
-            <h2>I'm a visual designer studying Computer Science and Visual Communication Design at the University of Notre Dame</h2>
+            <h2>I'm a visual designer studying Computer Science and 
+                Visual Communication Design at the University of Notre Dame</h2>
         </div>
-    </section>
+    </div>
     
     <div id="project-container">
         <!-- PROJECT 1 -->
         <div class="project">
-            <a href="about.html">
-                <img class="project-image" src="AFYR.png">
+            <a href="/project1/project1.html">
+                <img class="project-image" src="/project1/project1image.jpg">
                 <div class="project-description">
-                    <h2>Project 1</h2>
-                    <p>Project 1 description</p>
+                    <h2> Flourish</h2>
+                    <p>Brand Identity</p>
                 </div>
             </a>
         </div>
 
         <div class="project">
-            <a href="about.html">
-                <img class="project-image" src="ckuria2.jpg">
+            <a href="/project2/project2.html">
+                <img class="project-image" src="/project2/andywarholbookcover.jpg">
                 <div class="project-description">
-                    <h2>Project 2</h2>
-                    <p>Project 2 description</p>
+                    <h2>Book Cover Design</h2>
+                    <p>Andy Warhol Biography</p>
                 </div>
             </a> 
         </div>
 
         <div class="project">
             <a href="about.html">
-                <img class="project-image" src="brat.png">
+                <img class="project-image" src="">
                 <div class="project-description">
                     <h2>Project 3</h2>
                     <p>Project 3 description</p>
@@ -93,7 +91,7 @@
 
         <div class="project">
             <a href="about.html">
-                <img class="project-image" src="brat.png">
+                <img class="project-image" src="">
                 <div class="project-description">
                     <h2>Project 4</h2>
                     <p>Project 4 description</p>
@@ -112,11 +110,11 @@
         </div>
 
         <div class="project">
-            <a href="about.html">
-                <img class="project-image" src="ckuria2.jpg">
+            <a href="/project6/project6.html">
+                <img class="project-image" src="/project6/processbookcover.jpg">
                 <div class="project-description">
-                    <h2>Project 6</h2>
-                    <p>Project 6 description</p>
+                    <h2>Symbol Set Design</h2>
+                    <p>National Zoo Branding</p>
                 </div>
             </a>
         </div>
@@ -126,9 +124,19 @@
     <!-- CONTACT PAGE   ----------------->
 
     <div class="contact">
-        <h2>Now that you are at my corner of the internet, please contact me!</h2>
-        <h3>Email me at adamacunin23@gmail.com, or connect with me via LinkedIn! I'm always open to collaborate so don't hesitate to reach out!</h3>
-        <h3>my favorite move is Minions! I love baking and such! I also love popsicles.</h3>
+        <div class="contactcontainer">
+            <div class="contactbox1">
+                <h2>Let's connect!</h2>
+            </div>
+            <div class="contactbox2">
+                <h2>
+                    Email: aacunin23@gmail.com
+                    <br>
+                    LinkedIn: <a href="https://linkedin.com/in/adam-acunin" target=”_blank” class="aboutlink"> linkedin.com/in/adam-acunin</a>
+                </h2>
+            </div>
+        </div>
+        
     </div>
 
          <script src="script.js"></script>
