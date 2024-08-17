@@ -169,12 +169,11 @@ a:hover {
     /* background-image: url(giphy.webp); */
     /* background-size: cover; */
     /* background-position: center; */
-    padding-top: 16vh;
+    padding-top: 13vh;
     display: flex;
     flex-direction: column;
     margin: 0 20vh;
     text-align: left;
-
 }
 
 @keyframes bg-animation {
@@ -183,25 +182,14 @@ a:hover {
 
 }
 .hero-header {
-    font-size: 5rem;
+    font-size: 4.2rem;
     font-weight: 700;
-
     background-image: var(--gradient);
     background-clip: text;
     color: transparent;
     background-size: 400%;
     animation: bg-animation 3s infinite alternate;
 }
-
-/* #35052b,
-    #190535,
-    #051135,
-    #053035,
-    #05352d,
-    #073505,
-    #273505, */
-
-
 .hero-description {
     padding-top: 1vh;
     font-size: 2rem;
@@ -213,7 +201,6 @@ a:hover {
 }
 
 /* PROJECTS---------------------------------------------------------------- */
-
 #project-container {
     margin-top: 20vh;
     width: 100%;
@@ -317,6 +304,26 @@ p {
     width: 50vw;
 }
 
+.musiccontainer {
+    margin: auto;
+    /* border: 2px solid blue; */
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.musicimage {
+    padding: 3px;
+    width: 38vw;
+}
+
+.music {
+    display: flex;
+    flex-direction: column;
+}
+
 /* CONTACT -------------------------------------------------------------- */
 .contact {
     border-top: 3px solid black;
@@ -351,12 +358,7 @@ p {
     /* border: 1px dotted blue; */
 }
 
-
-
-
-
 /* ABOUT SECTION --------------------------------- */
-
 .about {
     /* border: 2px solid black; */
     display: flex;
@@ -367,7 +369,6 @@ p {
     justify-content: center;
     align-items: center;
 }
-
 .aboutheader {
     /* border: 2px solid black; */
     font-size: 3rem;
@@ -380,7 +381,6 @@ p {
     background-size: 400%;
     animation: bg-animation 3s infinite alternate;
 }
-
 .aboutdescription {
     /* border: 2px solid black; */
     width: 75vw;
@@ -390,20 +390,32 @@ p {
     flex-direction: row;
     justify-content: space-between;
 }
-
 .aboutdescription h3 {
     font-weight: 400;
 }
-
 .aboutbox {
     width: 35vw;
-    
 }
-
-
 .aboutlink:hover {
     color: rgb(121, 192, 215);
     text-decoration: underline;
     text-underline-offset: 0.2rem;
     text-decoration-color: rgb(121, 192, 215);
 }
+
+/* PHOTOGRAPHY----------------- */
+.photographycontainer {
+    margin: auto;
+    border: 2px solid black;
+    width: 85vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.photographyimage {
+    padding: 2px;
+    width: 41vw;
+}
+

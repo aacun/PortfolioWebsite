@@ -161,6 +161,16 @@
         height: var(--project-size-small);
     }
 
+    .musiccontainer {
+        width: 78vw;
+    
+    }
+    .musicimage {
+        padding: 2px;
+        width: 100%;
+    }
+
+
 
     /* ABOUT */
     .aboutdescription {
@@ -194,6 +204,16 @@
     }
     .contact h2 {
         font-size: 1.2rem;
+    }
+
+    /* PHOTOGRAPHY */
+    .photographycontainer {
+        width: 85vw;
+    
+    }
+    .photographyimage {
+        padding: 2px;
+        width: 100%;
     }
 
 }
