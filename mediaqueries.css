@@ -170,7 +170,12 @@
         width: 100%;
     }
 
-
+    .project1header {
+        font-size: 1.5rem;
+    }
+    .project1description {
+        font-size: 0.7rem;
+    }
 
     /* ABOUT */
     .aboutdescription {
