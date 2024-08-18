@@ -1,4 +1,3 @@
-/* GENERAL */
 :root {
     --gradient: linear-gradient(45deg,
     #830f6a,
@@ -8,6 +7,7 @@
     #0c6237,
     #1b830f
     );
+    --linkhover: rgb(49, 161, 199);
 }
 
 * {
@@ -27,7 +27,7 @@ p {
     color: rgb(85,85,85)
 }
 
-a, .btn {
+a {
     transition: all 300ms ease
 }
 
@@ -40,10 +40,10 @@ nav {
     background: white;
     position: sticky;
     top: 0;
-    border-bottom: 3px solid black;
+    border-bottom: 0.4svh solid black;
     justify-content: space-around;
     align-items: center;
-    height: 13vh;
+    height: 13svh;
     z-index: 1;
 }
 
@@ -61,21 +61,18 @@ a {
 }
 
 a:hover {
-    color: rgb(121, 192, 215);
+    color: var(--linkhover);
     text-decoration: underline;
     text-underline-offset: 0.6rem;
-    text-decoration-color: rgb(121, 192, 215);
+    text-decoration-color: var(--linkhover);
 }
 
 .logo {
     font-size: 2rem;
     font-weight: bold;
-
 }
 
-.logo:hover {
-    cursor: default;
-}
+
 
 /* HAMBURGER MENU -------------------------------------------------------*/
 
@@ -116,9 +113,8 @@ a:hover {
 }
 
 .menu-links a:hover {
-    background-color: rgb(121, 192, 215);
+    background-color: var(--linkhover);
 }
-
 .menu-links a {
     display: block;
     padding: 10px;
@@ -128,12 +124,9 @@ a:hover {
     text-decoration: none;
     transition: all 0.3 ease-in-out;
   }
-
-
 .menu-links li {
     list-style: none;
 }
-
 .menu-links.open {
     border: 3px solid black;
     max-height: 300px;
@@ -169,11 +162,13 @@ a:hover {
     /* background-image: url(giphy.webp); */
     /* background-size: cover; */
     /* background-position: center; */
-    padding-top: 13vh;
+    padding-top: 10vh;
     display: flex;
     flex-direction: column;
-    margin: 0 20vh;
-    text-align: left;
+    margin: 0 40dvh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 @keyframes bg-animation {
@@ -182,7 +177,7 @@ a:hover {
 
 }
 .hero-header {
-    font-size: 4.2rem;
+    font-size: 4rem;
     font-weight: 700;
     background-image: var(--gradient);
     background-clip: text;
@@ -191,8 +186,9 @@ a:hover {
     animation: bg-animation 3s infinite alternate;
 }
 .hero-description {
+    margin: auto;
     padding-top: 1vh;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 300;
 }
 
@@ -202,7 +198,7 @@ a:hover {
 
 /* PROJECTS---------------------------------------------------------------- */
 #project-container {
-    margin-top: 20vh;
+    margin-top: 10vh;
     width: 100%;
     height: 95%;
     display: flex;
@@ -290,7 +286,7 @@ p {
 }
 
 .project1images {
-    margin: 3vh 0;
+    margin: 1dvh 0;
     display: flex;
     width: 100%;
 }
@@ -325,9 +321,9 @@ p {
 
 /* CONTACT -------------------------------------------------------------- */
 .contact {
-    border-top: 3px solid black;
-    margin-top: 20vh;
-    height: 15vh;
+    border-top: 0.4svh solid black;
+    margin-top: 10dvh;
+    height: 15svh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -336,25 +332,21 @@ p {
 
 .contactcontainer {
     width: 73%;
-    height:100%;
+    height: 100%;
 
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding: 0.3dvw;
 
 }
-
 .contactbox1 {
-    /* border: 1px dotted blue; */
     text-align: left;
 }
 
 .contactbox2 {
     text-align: right;
-    /* border: 1px dotted blue; */
 }
 
 /* ABOUT SECTION --------------------------------- */
@@ -362,8 +354,8 @@ p {
     /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
-    width: 80vw;
-    margin: 8vh auto;
+    width: 80dvw;
+    margin: 8dvh auto;
     padding: 30px;
     justify-content: center;
     align-items: center;
@@ -396,17 +388,16 @@ p {
     width: 35vw;
 }
 .aboutlink:hover {
-    color: rgb(121, 192, 215);
+    color: var(--linkhover);
     text-decoration: underline;
     text-underline-offset: 0.2rem;
-    text-decoration-color: rgb(121, 192, 215);
+    text-decoration-color: var(--linkhover);
 }
 
 /* PHOTOGRAPHY----------------- */
 .photographycontainer {
     margin: auto;
-    border: 2px solid black;
-    width: 85vw;
+    width: 85dvw;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -415,6 +406,6 @@ p {
 }
 .photographyimage {
     padding: 2px;
-    width: 41vw;
+    width: 41dvw;
 }
 
