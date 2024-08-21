@@ -43,8 +43,7 @@ a {
     transition: all 300ms ease
 }
 
-/* DESKTOP NAV ----------------------------------------------------------*/
-nav, .nav-links {
+nav, .nav-links { /* DESKTOP NAV---------*/
     display: flex;
 }
 
@@ -85,8 +84,7 @@ a:hover {
     font-weight: 500;
 }
 
-/* HAMBURGER MENU -------------------------------------------------------*/
-#hamburger-nav {
+#hamburger-nav { /* HAMBURGER NAV---------*/
     display: none;
 }
 
@@ -166,10 +164,9 @@ a:hover {
   transform: none;
 }
 
-/* HERO SECTION------------------------------------------------------------- */  
-.hero {
+.hero { /* HERO SECTION---------*/  
     position: relative;
-    padding: 8dvh 0;
+    padding: 7dvh 0;
     display: flex;
     flex-direction: column;
     margin: 10dvh 30dvh;
@@ -189,11 +186,9 @@ a:hover {
     opacity: 0.7; */
     z-index: -1;
 }
-
 @keyframes bg-animation {
     0% {background-position: left;}
-    100% {background-position: right;}
-    
+    100% {background-position: right;} 
 }
 .hero-header {
     font-size: 4.5rem;
@@ -214,8 +209,7 @@ a:hover {
     font-weight: 400;
 }
 
-/* PROJECTS---------------------------------------------------------------- */
-#project-container {
+#project-container { /* PROJECTS---------*/
     padding-top: 2vh;
     width: 100%;
     height: 95%;
@@ -266,32 +260,24 @@ p {
 .project-description:hover {
     opacity: 1;
 }
-/* PROJECT 1---------------------------- */
 
-.project1 {
-    /* border: 2px solid black; */
+.project1 { /* PROJECT 1---------*/
     display: flex;
     flex-direction: column;
     width: 80vw;
     margin: 0 auto;
     padding: 30px;
 }
-
 .project1header {
-    /* border: 2px solid black; */
     font-size: 2.5rem;
     padding: 10px;
 }
-
 .project1description {
     padding: 10px;
 }
-
 .project1description h3 {
-    /* border: 5px solid black; */
     font-weight: 400;
 }
-
 .images {
     display: flex;
     flex-direction: column;
@@ -300,43 +286,35 @@ p {
     position: relative;
     width: 80vw;
 }
-
 .project1images {
     margin: 1dvh 0;
     display: flex;
     width: 100%;
 }
-
 .projectoutline {
     border: 1px solid rgb(205, 205, 205);
 }
-
 .projectcover {
     width: 50vw;
 }
-
 .musiccontainer {
     margin: auto;
-    /* border: 2px solid blue; */
     width: 80vw;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
 }
 .musicimage {
     padding: 3px;
     width: 38vw;
 }
-
 .music {
     display: flex;
     flex-direction: column;
 }
 
-/* CONTACT -------------------------------------------------------------- */
-.contact {
+.contact { /* CONTACT---------*/
     border-top: 2px solid #c4c4c4;
     margin-top: 10dvh;
     height: 15dvh;
@@ -365,9 +343,7 @@ p {
     text-align: right;
 }
 
-/* ABOUT SECTION --------------------------------- */
-.about {
-    /* border: 2px solid black; */
+.about { /* ABOUT SECTION---------*/
     display: flex;
     flex-direction: column;
     width: 80dvw;
@@ -377,7 +353,6 @@ p {
     align-items: center;
 }
 .aboutheader {
-    /* border: 2px solid black; */
     font-size: 3rem;
     padding: 5px;
     width: 75vw;
@@ -389,7 +364,6 @@ p {
     animation: bg-animation 3s infinite alternate;
 }
 .aboutdescription {
-    /* border: 2px solid black; */
     width: 75vw;
     margin: 0 auto;
     padding: 5px;
@@ -410,8 +384,7 @@ p {
     text-decoration-color: var(--linkhover);
 }
 
-/* PHOTOGRAPHY----------------- */
-.photographycontainer {
+.photographycontainer { /* PHOTOGRAPHY---------*/
     margin: auto;
     width: 75dvw;
     display: flex;
@@ -420,15 +393,15 @@ p {
     justify-content: center;
 }
 .photographytitle {
+    padding-left: 15px;
     width: 100%;
 
 }
 .photographydescription {
-    padding: 5px;
+    padding-left: 5px;
     width: 100%
 }
 .photographyimage {
     padding: 5px;
     width: 36dvw;
 }
-
